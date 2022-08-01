@@ -1,0 +1,323 @@
+/*  
+Colors used
+
+h1 font-family: 'DM Serif Display', serif;
+h2 font-family: 'DM Serif Text', serif;
+The rest font-family: 'DM Sans', sans-serif; (400, 700)
+
+/* As hex codes
+
+Background Grey { color: #646464 }
+Lightest Grey { color: #F6F6F6 }
+Middle Grey Lighter { color: #868686 }
+Middle Grey Darker { color: #464646 }
+Dark Grey { color: #222222 }
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* BACKGROUND COLOR CHANGE -- START
+
+@keyframes changeColor {
+    from {
+        background-color: #c2c1c1;
+    }
+    to {
+        background-color: #646464;
+    }
+
+} BACKGROUND COLOR CHANGE -- END */
+
+body {
+    background-color: #646464;
+    font-family: 'DM Sans', sans-serif;
+    color: #222;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+
+}
+
+nav {
+    color: #464646;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #464646;
+    font-size: 600px;
+    font-weight: 400;
+    line-height: 0.34;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.h1--darker-text {
+    color: #222;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #464646;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.container--page-title {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    word-wrap: break-word;
+    z-index: -1;
+    position: absolute;
+    margin: 3px 0 0 0;
+    background-color: ;
+}
+
+p {
+    padding: 5px;
+}
+
+a:link {
+    color: #222;
+    text-decoration: none;
+    background-color: #c2c1c1;
+}
+
+a:visited {
+    color: #222;
+    text-decoration: line-through;
+}
+
+a:hover,
+a:focus {
+    color: #222;
+    background-color: #222;
+
+}
+
+a:active {
+    background-color: #ffaed4;
+    color: #ffaed4;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+a.a__light-background {
+    background-color: #222;
+    color: #c2c1c1;
+}
+
+a.a__light-background:hover, a.a__light-background:hover {
+    background-color: #c2c1c1;
+    color: #c2c1c1;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+li {
+    color: #222;
+    text-decoration: none;
+    background-color: #c2c1c1;
+    text-align: left;
+    padding: 5px;
+}
+
+.container--introduction {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffaed4;
+    padding: 15px;
+}
+
+.container--introduction__text-item {
+    background-color: #c2c1c1;
+    padding: 0;
+}
+
+
+.table__header {
+    color: #ff85be;
+}
+
+.contact-information {
+    color: #fff;
+}
+
+.contact-information:visited {
+    color: #fff;
+}
+
+.standard-label {
+    color: #ff85be;
+}
+
+button,
+a.button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: #c2c1c1;
+    color: #222;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s;
+  }
+
+  button:hover, 
+  button:focus,
+  a.button:hover, 
+  a.button:focus {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  a.button__secondary {
+    background-color: #222;
+    color: #fff;
+  }
+
+
+
+.section--profile, .section--about {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+
+    padding: 90px 0 0 0;
+
+}
+
+.section--about__content {
+    background-color: #c2c1c1;
+}
+
+#about-picture {
+    width: 300px;
+}
+
+.ul--about__list {
+    list-style-type: none;
+}
+
+
+.profile__portrait {
+    max-width: auto;
+    height: auto;
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 150px 0 0 0;
+    background-color: #646464;
+}
+
+a.social-media__item{
+    background-color: #646464;
+}
+
+
+
+.table--experience {
+
+}
+
+/* *****START -- GRID PROJECTS LIST ***** */
+
+/* ***** START -- GRID FALLBACK ***** */
+
+.grid__item {
+    display: inline-block;
+    width: 33%;
+   }
+
+/* END -- GRID FALLBACK */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 15px;
+}
+
+.grid__item {
+    background-color: #c2c1c1;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    border-radius: 0.5%;
+}
+
+.grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+}
+
+/* ***** END -- GRID PROJECTS LIST ***** */
+
+
+/* ***** MEDIA QUERIES ***** */
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+}
+
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+}
