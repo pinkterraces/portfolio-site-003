@@ -343,7 +343,6 @@ ul {
     height: auto;
     z-index: 1;
     margin-top: 100px;
-
 }
 
 .section-main__content {
@@ -362,6 +361,8 @@ ul {
 .section-main__content--column {
 
     flex-direction: column;
+    max-width: 500px;
+    margin: auto;
 
 }
 
