@@ -402,8 +402,21 @@ textarea {
     background-color: var(--background-grey-color);
 }
 
-a.social-media__item{
+ a.social-media__item:link {
     background-color: var(--background-grey-color);
+}
+
+a.social-media__item:visited {
+    background-color: var(--background-grey-color);
+}
+
+a.social-media__item:hover, 
+a.social-media__item:focus {
+    background-color: var(--background-grey-color);
+}
+
+img.social-media__item {
+    width: 50px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ALL POSITIONING END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
