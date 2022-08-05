@@ -351,8 +351,9 @@ header img {
 
 .section-main__content {
     width: 100%;
+    max-width: 50%;
     height: 500px;
-    margin: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -371,10 +372,16 @@ header img {
 }
 
 .profile__portrait {
-    max-width: 500px;
+    max-width: 50%;
     height: auto;
     border-radius: 50%;
     margin: 0 25px;
+}
+
+.home--copy {
+    max-width: 50%;
+    min-width: 265px;
+    height: auto;
 }
 
 form {
