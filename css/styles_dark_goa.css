@@ -198,7 +198,8 @@ a.link__contact--light:active {
 
 button,
 a.btn--light,
-a.btn--dark {
+a.btn--dark,
+input.btn--dark {
     border: none;
     display: inline-block;
     font-family: inherit;
@@ -222,10 +223,14 @@ button:focus,
 a.btn--dark:hover, 
 a.btn--dark:focus,
 a.btn--light:hover, 
-a.btn--light:focus {
+a.btn--light:focus,
+input.btn--dark:hover,
+input.btn--dark:focus {
   cursor: pointer;
   opacity: 0.5;
 }
+
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINKS END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
