@@ -35,9 +35,9 @@ var(--secondary-line-height);
 
     --primary-font-weight: 400;
     --primary-line-height: 1;
-    --secondary-line-height: 0.5;
-  }
-  
+    --secondary-line-height: 1.5;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -63,7 +63,7 @@ h4 {
     font-weight: var(--primary-font-weight);
     font-size: 14px;
     line-height: 1.2;
-    
+
 }
 
 body {
@@ -112,7 +112,7 @@ h1,
     font-size: 42px;
     font-weight: var(--primary-font-weight);
     line-height: var(--primary-line-height);
-    margin: 0 0 0 0;
+    margin: 15px 0 0 0;
     padding: 0 0 0 0;
 }
 
@@ -125,7 +125,7 @@ h1,
     font-size: 30px;
     font-weight: var(--primary-font-weight);
     line-height: var(--primary-line-height);
-    margin: 0 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0 0 0 0;
 }
 
@@ -198,8 +198,10 @@ a:active,
 a.link--light:active,
 .link__contact--dark:active,
 a.link__contact--light:active {
-    background-color: var(--primary-pink-color);
-    color: var(--primary-pink-color);
+    /* background-color: var(--primary-pink-color);
+    color: var(--primary-pink-color); */
+    background-color: var(--lightest-grey-color);
+    color: var(--lightest-grey-color);
 }
 
 button,
@@ -212,11 +214,13 @@ input.btn--dark {
     background-color: var(--lightest-grey-color);
     color: var(--darkest-grey-color);
     text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: opacity 1s;
+    /* padding: 10px; */
+    /* border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
+    /* transition: opacity 1s; */
     margin: 5px;
+    line-height: 1.5;
+
 }
 
 a.btn--light {
@@ -224,16 +228,28 @@ a.btn--light {
     color: var(--lightest-grey-color);
 }
 
-button:hover, 
+button:hover,
 button:focus,
-a.btn--dark:hover, 
+a.btn--dark:hover,
 a.btn--dark:focus,
-a.btn--light:hover, 
+a.btn--light:hover,
 a.btn--light:focus,
 input.btn--dark:hover,
 input.btn--dark:focus {
-  cursor: pointer;
-  opacity: 0.5;
+    cursor: pointer;
+    /* opacity: 0; */
+    background-color: var(--darkest-grey-color);
+    color: var(--darkest-grey-color);
+}
+
+button:active,
+a.btn--dark:active,
+a.btn--light:active,
+input.btn--dark:active {
+    cursor: pointer;
+    /* opacity: 0; */
+    background-color: var(--lightest-grey-color);
+    color: var(--lightest-grey-color);
 }
 
 
@@ -256,7 +272,7 @@ input.btn--dark:focus {
 }
 
 .text--pink {
-    background-color: var(--primary-pink-color);
+    background-color: var(--lightest-grey-color);
 }
 
 .grid__item {
@@ -265,6 +281,20 @@ input.btn--dark:focus {
 
 ul {
     list-style-type: none;
+}
+
+.work--grid--links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.work--p {
+    margin-top: 15px;
+}
+
+.work--tech {
+    background-color: #868686;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FONTS & COLORS END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -277,7 +307,24 @@ ul {
 .grid__item {
     display: inline-block;
     width: 33%;
-   }
+}
+
+.grid__item--contents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.grid__item--text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid__item--img {
+    max-width: 100%;
+}
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GRIDS FALLBACK END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
@@ -294,11 +341,12 @@ ul {
     min-height: auto;
     margin: 0;
     border-radius: 0.5%;
+    padding: 15px;
 }
 
 .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
+    /* grid-column: 3 / 3;
+    grid-row: 1 / 3; */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GRID PROJECTS LIST END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -356,6 +404,9 @@ nav {
     justify-content: flex-end;
 }
 
+.header__logo {
+    padding-top: 0px;
+}
 
 
 /* SAFE HEADER CSS TEMP
@@ -405,7 +456,7 @@ nav.page-header__item {
     max-width: 100%;
     height: auto;
     z-index: 1;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .section-main__content {
@@ -440,7 +491,7 @@ nav.page-header__item {
 .contact-section-main__content--column {
     width: 100%;
     max-width: 500px;
-    height: 600px;
+    height: 300px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -464,6 +515,15 @@ nav.page-header__item {
     max-width: 50%;
     min-width: 265px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.home--copy--buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
 }
 
 form {
@@ -493,7 +553,7 @@ textarea {
 
 ::-webkit-resizer {
     display: none;
-  }
+}
 
 .page-footer {
     clear: both;
@@ -504,7 +564,7 @@ textarea {
     background-color: var(--background-grey-color);
 }
 
- a.social-media__item:link {
+a.social-media__item:link {
     background-color: var(--background-grey-color);
 }
 
@@ -512,7 +572,7 @@ a.social-media__item:visited {
     background-color: var(--background-grey-color);
 }
 
-a.social-media__item:hover, 
+a.social-media__item:hover,
 a.social-media__item:focus {
     background-color: var(--background-grey-color);
 }
@@ -527,21 +587,23 @@ img.social-media__item {
 
 @keyframes color-change {
     0% {
-      fill: #edc655;
+        fill: #edc655;
     }
+
     50% {
-      fill: #fcffad;
+        fill: #fcffad;
     }
+
     100% {
-      fill: #f76414;
+        fill: #f76414;
     }
-  }
+}
 
-  .sun {
+.sun {
     animation: 4s color-change infinite alternate linear;
-  }
+}
 
-  @keyframes cloud-move {
+@keyframes cloud-move {
     from {
         transform: translate(0, 50px);
     }
@@ -549,16 +611,17 @@ img.social-media__item {
     to {
         transform: translate(200px, 50px);
     }
-  }
+}
 
-  .cloud-front {
+.cloud-front {
     animation: 30s cloud-move infinite alternate linear;
-  }
+}
 
 @keyframes cloud-move-reverse {
     from {
         transform: translate(450px, 40px);
     }
+
     to {
         transform: translate(100px, 40px);
     }
@@ -575,7 +638,8 @@ img.social-media__item {
 @media all and (max-width: 540px) {
     .grid {
         grid-template-columns: 1fr;
-}
+    }
+
     .heading--h1-light {
         font-size: 50px;
     }
@@ -627,7 +691,7 @@ img.social-media__item {
 
     .contact-section-main__content--column {
         width: 90%;
-    
+
     }
 }
 
