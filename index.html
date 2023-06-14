@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HEAD & META >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Nick Dewar - Portfolio</title>
@@ -8,7 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display&family=DM+Serif+Text&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles_dark_goa.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -19,71 +22,81 @@
 <body>
 
 
-  
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER INCLUDING LOGO AND NAV >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-<header>
-  <div class="page-header__logo--container">
-    <img class="header__logo" src="./img/Nick_Dewar_Logo.svg" alt="Nick Dewar Logo">
-  </div>
-  <nav class="page-header__nav--container">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-        <a href="index.html" role="menuitem" class="link--dark">Home</a>
-      </li>
-      <li role="presentation">
-        <a href="about.html" role="menuitem" class="link--dark">About me</a>
-      </li>
-      <li role="presentation">
-        <a href="contact.html" role="menuitem" class="link--dark">Contact</a>
-      </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="link--dark">Work</a>
-      </li>
-    </ul>  
-  </nav>
-</header>
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER INCLUDING LOGO AND NAV END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER INCLUDING LOGO AND NAV >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <header>
+    <div class="page-header__logo--container">
+      <!-- <img class="header__logo" src="./img/Nick_Dewar_Logo.svg" alt="Nick Dewar Logo"> -->
+      <h1 class="heading--small-dark header__logo">
+        <a href="">Nick Dewar</a>
+      </h1>
+    </div>
+    <nav class="page-header__nav--container">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="link--dark">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="link--dark">About me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="link--dark">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="link--dark">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER INCLUDING LOGO AND NAV END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
 
 
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< MAIN SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->  
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< MAIN SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
   <section class="section-main">
     <div class="section-main__content">
-      
+
       <img class="profile__portrait" src="img/Nick_Dewar_Developer_Portrait_03.jpg" alt="Picture of Nick">
-      <div class="text--pink home--copy">  
-        <h2 class="heading--large-light">Nick <span class="heading--large-dark">Dewar</span></h2>
+      <div class="text--pink home--copy">
+        <!--  <h2 class="heading--large-light">Nick <span class="heading--large-dark">Dewar</span></h2> -->
         <p class="container--introduction__text-item">
-            I'm a kiwi web developer living in Berlin.
+          I'm a kiwi web developer living in Berlin.
         </p>
-        <p class="container--introduction__text-item">Check out some of <a class="a__light-background" target="_blank" href="https://github.com/pinkterraces">my code</a></p>
-        <a href="contact.html" class="btn--light">Get In Touch</a>
-        <a href="work.html" class="btn--dark">See my work</a>
+        <!-- <p class="container--introduction__text-item">Check out some of <a class="a__light-background" target="_blank" href="https://github.com/pinkterraces">my code</a></p> -->
+        <div class="home--copy--buttons">
+          <a href="contact.html" class="btn--light">Get in touch</a>
+          <a href="work.html" class="btn--light">My code</a>
+        </div>
+
       </div>
     </div>
   </section>
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->  
-  
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
 
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->    
+
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
-      <a class="social-media__item" href="contact.html"><img class="social-media__item" src="img/github-mark.svg" alt="GitHub Logo"></a>
-      <a class="social-media__item" href="contact.html"><img class="social-media__item" src="img/twitter-logo-black.svg" alt="Twitter Logo"></a>
-      <a class="social-media__item" href="contact.html"><img class="social-media__item" src="img/linkedin-logo.svg" alt="LinkedIn Logo"></a>
+      <a class="social-media__item" href="https://github.com/pinkterraces"><img class="social-media__item"
+          src="img/github-mark.svg" alt="GitHub Logo"></a>
+     <!--  <a class="social-media__item" href="contact.html"><img class="social-media__item" src="img/twitter-logo-black.svg"
+          alt="Twitter Logo"></a> -->
+      <a class="social-media__item" href="https://www.linkedin.com/in/nicholas-dewar-a641398a/"><img
+          class="social-media__item" src="img/linkedin-logo.svg" alt="LinkedIn Logo"></a>
     </div>
   </footer>
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
 
 
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SCRIPTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->    
-    <script src="js/tota11y.min.js"></script>
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SCRIPTS END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SCRIPTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <script src="js/tota11y.min.js"></script>
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SCRIPTS END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
 
 
-  </body>
+</body>
+
 </html>
