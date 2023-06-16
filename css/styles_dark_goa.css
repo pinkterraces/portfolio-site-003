@@ -142,6 +142,14 @@ h1,
     padding: 0 0 0 0;
 }
 
+.heading--extra-small-dark {
+    font-size: 18px;
+    font-weight: var(--primary-font-weight);
+    line-height: var(--primary-line-height);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 .heading--small-light {
     color: var(--darker-grey-color);
 }
@@ -295,6 +303,20 @@ ul {
 
 .work--tech {
     background-color: #868686;
+}
+
+.skills-tech-container {
+    text-align: center;
+}
+
+.skills-tech {
+    margin-top: 15px;
+}
+
+.skills--grid--links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FONTS & COLORS END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -658,6 +680,7 @@ img.social-media__item {
     .page-header__nav--container {
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
     }
 
     nav ul {
