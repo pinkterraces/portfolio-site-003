@@ -535,7 +535,7 @@ nav.page-header__item {
 
 .home--copy {
     max-width: 50%;
-    min-width: 265px;
+    min-width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -657,7 +657,7 @@ img.social-media__item {
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< MEDIA QUERIES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 670px) {
     .grid {
         grid-template-columns: 1fr;
     }
@@ -718,7 +718,7 @@ img.social-media__item {
     }
 }
 
-@media all and (min-width: 541px) and (max-width: 800px) {
+@media all and (min-width: 671px) and (max-width: 800px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
